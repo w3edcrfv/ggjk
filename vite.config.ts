@@ -3,12 +3,8 @@ import react from "@vitejs/plugin-react-swc";
 import { resolve } from "node:path";
 import AutoImport from "unplugin-auto-import/vite";
 
-// GitHub Pages 部署时，使用仓库名称作为 base 路径
-const base = process.env.IS_PREVIEW
-  ? "./"
-  : process.env.GITHUB_PAGES
-  ? "/ggjk/"
-  : "/";
+// GitHub Pages 部署时，使用相对路径
+const base = "./";
 const isPreview = process.env.IS_PREVIEW ? true : false;
 // https://vite.dev/config/
 export default defineConfig({
