@@ -7,7 +7,7 @@ import AutoImport from "unplugin-auto-import/vite";
 const base = process.env.IS_PREVIEW
   ? "./"
   : process.env.GITHUB_PAGES
-  ? "/mental-health-assessment/"
+  ? "/ggjk/"
   : "/";
 const isPreview = process.env.IS_PREVIEW ? true : false;
 // https://vite.dev/config/
